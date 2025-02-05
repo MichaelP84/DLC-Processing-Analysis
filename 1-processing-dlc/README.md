@@ -13,3 +13,37 @@ Now, the all the outputs will be in the /Analysis folder.
 Next, we are going to add the food drop column, which indicates if the frame was pre or post food drop. The food drop csv should have 3 columns: file, min, sec. The file column contains the name of the csv this record refers to. The min refers to the minute at which the food was dropped. The second contains the second of the minute when the food was dropped. This csv was created manually.
 
 Update the _feeding_time_path_ variable to point towards your data then run **food_label.py**.
+
+Now you should have a recreation of all the data that was in Analysis, but with a food_label column.
+
+Finally, create a folder /data and put all your analyzed in this folder in this strucutre:
+
+/data
+
+> /3Rats
+
+- Average_Position_01
+- Average_Position_02
+  ...
+- Average_Position_15
+
+> /6Rats
+
+- Average_Position_01
+- Average_Position_02
+  ...
+- Average_Position_15
+
+> /9Rats
+
+- Average_Position_01
+- Average_Position_02
+  ...
+- Average_Position_15
+
+  > /15Rats
+
+- Average_Position_01
+- Average_Position_02
+  ...
+- Average_Position_15
