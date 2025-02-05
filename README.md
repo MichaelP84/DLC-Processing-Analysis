@@ -10,11 +10,11 @@ Turn the raw csv outputs of DLC inference into formatted .RData files with food 
 
 Calculate the approaches between rats using position data
 
-## . Speed Analysis
+## 3. Speed Analysis
 
 Generate formatted speed analysis data, then plot data.
 
-## . Distance Analysis
+## 4. Distance Analysis
 
 Generate formatted distance analysis data, then plot data.
 

@@ -19,7 +19,6 @@ all_speeds$mean_speed[all_speeds$mean_speed == 0] <- NA
 #result_subset <- subset(all_speeds, run == 1)[0:500, 2:3]
 #colnames(result_subset)[colnames(result_subset) == "food"] <- paste0("food_", 1)
 
-
 combined_df <- data.frame(
   base = rep(NA, max)
 )
