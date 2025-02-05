@@ -1,4 +1,4 @@
-# 1. Processing DLC Data
+# 2. Processing DLC Data
 
 The output csv of one video will be structured as so:
 

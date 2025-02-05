@@ -9,8 +9,8 @@ bins_per_min = 3600 / BIN
 
 cond <- 3
 
-load(glue("/Users/michaelpasala/Research/MovementLab/analysis/speeds/{cond}all_speeds.Rda"))
-#load("/Users/michaelpasala/Research/MovementLab/analysis/speeds/all_speed_old/all_speeds3.Rda")
+load(glue("./{cond}all_speeds.Rda"))
+#load("/Users/michaelpasala/Research/MovementLab/analysis/speeds/all_speed_old/a3ll_speeds.Rda")
 
 all_speeds$mean_speed <- rowMeans(all_speeds[, 1:(length(all_speeds) - 2)])
 all_speeds <- all_speeds[, (ncol(all_speeds) - 2):ncol(all_speeds)]
@@ -130,21 +130,21 @@ boxplot(final_df,
         #col = c("lightblue", "lightgreen", "lightpink")  # Specify box colors
 )
 
-save(final_df, file = glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+save(final_df, file = glue("./{cond}_speed_minute.RData"))
 
 
 ############# load and trim data set values
 library(glue)
 cond <- 9
-load(glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+load(glue("./{cond}_speed_minute.RData"))
 keep <- as.character(seq(-5 ,5, 1))
 final_df <- final_df[, keep]
-save(final_df, file = glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+save(final_df, file = glue("./{cond}_speed_minute.RData"))
 
 
 ############# graph data
 cond <- 9
-load(glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+load(glue("./{cond}_speed_minute.RData"))
 boxplot(final_df,
         ylim = c(0, 7),
         xlab = "Minutes",  # Customize the x-axis label
@@ -155,7 +155,7 @@ boxplot(final_df,
 
 ############# create anova friendly data
 cond<-3
-load(glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+load(glue("./{cond}_speed_minute.RData"))
 
 anova <- data.frame(
   ID = c(NA),
@@ -179,7 +179,7 @@ for (i in 1:ncol(final_df)) {
 }
 
 cond<-6
-load(glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+load(glue("./{cond}_speed_minute.RData"))
 
 for (i in 1:ncol(final_df)) {
   time <- as.integer(colnames(final_df)[i])
@@ -196,7 +196,7 @@ for (i in 1:ncol(final_df)) {
 
 
 cond<-9
-load(glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+load(glue("./{cond}_speed_minute.RData"))
 
 
 for (i in 1:ncol(final_df)) {
@@ -213,7 +213,7 @@ for (i in 1:ncol(final_df)) {
 }
 
 cond<-15
-load(glue("/Users/michaelpasala/Research/MovementLab/plots/speed/new/{cond}_speed_minute.RData"))
+load(glue("./{cond}_speed_minute.RData"))
 
 
 for (i in 1:ncol(final_df)) {
@@ -230,8 +230,8 @@ for (i in 1:ncol(final_df)) {
 }
 
 anova <- anova[-1, ]
-save(anova, file = "/Users/michaelpasala/Research/MovementLab/plots/speed/new/anova.RData")
-write.csv(anova, file = "/Users/michaelpasala/Research/MovementLab/plots/speed/new/anova.csv", row.names = FALSE)
+save(anova, file = "./anova.RData")
+write.csv(anova, file = "./anova.csv", row.names = FALSE)
 
 
 
