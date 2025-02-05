@@ -1,15 +1,5 @@
-# 2. Processing DLC Data
+# 2. Calculate Approach Behaviour
 
-The output csv of one video will be structured as so:
+Run **approach_counts.py** to generate all_approaches.csv. Make sure to change data_path to point to the folder that contains all the conditions and their movement data.
 
-- There will be 3 columns for every point in the video: x, y, and likelihood.
-- There will then be n points for every rat, depending on the number of points you trained the model with.
-- And there will be m rats, depending on how many are in the video
-
-Put all your csv data in /csv, remove the file titled "remove_this" and run MovementExtraction.py.
-
-After running all the csv's format the files like so
-
-/Data
-
-> /
+Then, run **Plot_Approaches.R** using all_approaches.csv. Make sure to change the input file path to point to your all_approaches.csv file.

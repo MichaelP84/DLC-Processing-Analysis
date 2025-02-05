@@ -5,7 +5,7 @@ import numpy as np
 import math
 from multiprocessing import Pool
 
-data_path = ""
+data_path = "" # should point to the folder that contains 3Rats, 6Rats, 9Rats, 15Rats
 
 def main():
 
@@ -34,8 +34,6 @@ def main():
                 post = post.drop(columns=['Unnamed: 0', 'food_label'], axis=1)
                 data_pre.append(pre)
                 data_post.append(post)
-
-
 
             work_pre= []
             for i in range(len(data_pre)):

@@ -6,7 +6,7 @@ To follow this repo, you should have already trained a pose estimation model in 
 
 Turn the raw csv outputs of DLC inference into formatted .RData files with food drop information for further analysis.
 
-## . Approaches
+## 2. Approaches
 
 Calculate the approaches between rats using position data
 
