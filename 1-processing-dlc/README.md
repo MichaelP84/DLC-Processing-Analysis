@@ -24,22 +24,18 @@ Finally, create a folder /data and put all your analyzed in this folder in this 
 
 - Average_Position_01
 - Average_Position_02
-  ...
 
 > /6Rats
 
 - Average_Position_01
 - Average_Position_02
-  ...
 
 > /9Rats
 
 - Average_Position_01
 - Average_Position_02
-  ...
 
-  > /15Rats
+> /15Rats
 
 - Average_Position_01
 - Average_Position_02
-  ...
