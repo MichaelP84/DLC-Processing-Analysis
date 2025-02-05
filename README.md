@@ -10,8 +10,7 @@ The output csv of one video will be structured as so:
 - There will then be n points for every rat, depending on the number of points you trained the model with.
 - And there will be m rats, depending on how many are in the video
 
-Put all your csv data in /csv and run MovementExtraction.py
-This will create a
+Put all your csv data in /csv, remove the file titled "remove_this" and run MovementExtraction.py
 
 ## 2. Speed Analysis
 
