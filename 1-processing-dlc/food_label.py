@@ -16,7 +16,7 @@ def main():
 
     feeding_times = pd.read_excel(feeding_time_path)
 
-    save = "C:\\Users\\mrp3844\\MonfilsLab\\Analysis\\MonfilsLab-Movement\\food_labeled"
+    save = "./food_labeled"
     if (not os.path.exists(save)):
         os.mkdir(save)
     

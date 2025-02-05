@@ -1,6 +1,6 @@
 # 1. Processing DLC Data
 
-The output csv of one video will be structured as so:
+The output csv of one video from DLC inference will be structured as so:
 
 - There will be 3 columns for every point in the video: x, y, and likelihood.
 - There will then be n points for every rat, depending on the number of points you trained the model with.
@@ -8,8 +8,8 @@ The output csv of one video will be structured as so:
 
 Put all your csv data in /csv, remove the file titled "remove_this" and run MovementExtraction.py.
 
-After running all the csv's format the files like so
+Now, the all the outputs will be in the /Analysis folder.
 
-/Data
+Next, we are going to add the food drop column, which indicates if the frame was pre or post food drop. The food drop csv should have 3 columns: file, min, sec. The file column contains the name of the csv this record refers to. The min refers to the minute at which the food was dropped. The second contains the second of the minute when the food was dropped. This csv was created manually.
 
-> /
+Update the _feeding_time_path_ variable to point towards your data then run **food_label.py**.
