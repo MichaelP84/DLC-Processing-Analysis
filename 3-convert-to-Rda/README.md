@@ -1,4 +1,4 @@
-# 2. Convert to Rda (R's data file format)
+# 3. Convert to Rda (R's data file format)
 
 Run **MakeDataFilesFromCSV.R** 4 times, each time select the condition you want to convert.
 
