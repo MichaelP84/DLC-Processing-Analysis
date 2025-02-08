@@ -26,6 +26,6 @@ Generate formatted distance analysis data, then plot data.
 
 Run DBSCAN clustering algorithm, format, and plot data.
 
-## . Bootstrapping
+## 7. Bootstrapping
 
 Create bootstrapped experiment and run trials.
