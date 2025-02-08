@@ -9,6 +9,11 @@ For all of the following files, make sure you go through the code and change any
 First, make sure you still have all the position Rdata, and change the files paths for the code in /software to point to it.
 Then use the SLURM cli to schedule the seriail_job.slurm job to run.
 
+The results of running the code can be found here:
+
+- within condition: https://utexas.box.com/s/glh2o6ksftv7p0pwi9fd4ma5fsx9b9uc
+- across condition: https://utexas.box.com/s/1dqihz9prfwlh1s9j0lm4jrn616dc8re
+
 Changing the file in serial_job.slurm will change which gets run
 
 #### TACC_BootAnalyzeGroupsInCondition.R
