@@ -5,7 +5,7 @@ library(tidyr)
 library(glue)
 library(readr)
 
-approaches <- read_csv("/Users/michaelpasala/Research/MovementLab/all_approaches.csv")
+approaches <- read_csv("./all_approaches.csv")
 
 approaches <- approaches[, 2:3]
 approaches$Condition <- as.factor(approaches$Condition)
