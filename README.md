@@ -2,6 +2,8 @@
 
 To follow this repo, you should have already trained a pose estimation model in DLC, and have run the model on videos to create output csv’s. Proceed in chronological order. Each step folder has more details about how to use the files provided.
 
+This repo will continously link to specific files and folders in this box: https://utexas.box.com/s/c9za1o6y25so9x3fm3kncenqm2syu7j0
+
 ## 1. Processing DLC Data
 
 Turn the raw csv outputs of DLC inference into formatted .RData files with food drop information for further analysis.
